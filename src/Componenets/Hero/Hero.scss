@@ -1,0 +1,139 @@
+.hero {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(180deg, #ff0cff52, #790cff5d 70%);
+  &__left {
+    padding-top: 70px;
+    line-height: 1.1;
+    h2 {
+      color: #909;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #909;
+      font-size: 36px;
+    }
+    &__hand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      .image {
+        width: 105px;
+      }
+    }
+    &__latest {
+      display: flex;
+      margin-top: 30px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      height: 70px;
+      width: 310px;
+      background-color: rgba(128, 128, 128, 0.571);
+      font-size: 22px;
+      color: #909;
+      img {
+        width: 30px;
+      }
+    }
+  }
+  &__right {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    background-color: antiquewhite;
+    img {
+      height: 400px;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .hero {
+    &__left {
+      padding-left: 80px;
+      h2 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 50px;
+      }
+      &__hand {
+        .image {
+          width: 80px;
+        }
+      }
+      &__latest {
+        margin-top: 15px;
+        width: 220px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .hero {
+    &__left {
+      padding-left: 30px;
+      h2 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 40px;
+      }
+      &__hand {
+        .image {
+          width: 80px;
+        }
+      }
+      &__latest {
+        margin-top: 15px;
+        width: 200px;
+        font-size: 18px;
+      }
+    }
+    &__right {
+      width: 35%;
+      display: flex;
+      justify-content: center;
+      background-color: antiquewhite;
+      img {
+        height: 300px;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    &__left {
+      h2 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 30px;
+      }
+      &__hand {
+        .image {
+          width: 55px;
+        }
+      }
+      &__latest {
+        margin-top: 15px;
+        width: 150px;
+        gap: 5px;
+        font-size: 14px;
+        img {
+          width: 20px;
+        }
+      }
+    }
+    &__right {
+      display: none;
+    }
+  }
+}

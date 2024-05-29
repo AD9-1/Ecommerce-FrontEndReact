@@ -1,0 +1,40 @@
+.descriptionbox {
+  margin: 30px 120px;
+  @media (max-width: 720px) {
+    margin: 20px 100px;
+  }
+  @media (max-width: 670px) {
+    margin: 20px 50px;
+  }
+  &-navigator {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 40px;
+    @media (max-width: 500px) {
+      gap: 20px;
+    }
+    &-navbox {
+      width: fit-content;
+      height: 40px;
+      border: 1px solid #d0d0d0;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 20px 10px 0px 10px;
+    }
+    .fade {
+      background-color: beige;
+      color: #555;
+    }
+  }
+  &-description {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid #d0d0d0;
+    padding: 50px;
+    @media(max-width:500px){
+      padding:20px;
+    }
+  }
+}

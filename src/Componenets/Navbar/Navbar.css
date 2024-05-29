@@ -1,0 +1,174 @@
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0px;
+  align-items: center;
+}
+.navbar__left {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  justify-content: center;
+  color: red;
+}
+.navbar__left NavLink {
+  text-decoration: none;
+}
+.navbar__left h2 {
+  margin-left: 10px;
+}
+.navbar__middle {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+.navbar__middle li {
+  padding: 5px;
+  font-size: 20px;
+  color: red;
+  background-color: rgb(220, 245, 239);
+}
+.navbar__middle__active {
+  border-bottom: 1px solid black;
+}
+.navbar__right {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar__right__button {
+  width: 60%;
+  height: 3rem;
+  margin-right: 15px;
+}
+.navbar__right__button button {
+  width: 100%;
+  height: 100%;
+  background-color: burlywood;
+  color: red;
+  font-size: 20px;
+  border: none;
+  border-radius: 75px;
+}
+.navbar__right__button button:active {
+  background-color: chocolate;
+}
+.navbar__right__count {
+  width: 30px;
+  margin-top: -45px;
+  margin-left: -15px;
+  background-color: burlywood;
+  text-align: center;
+  color: red;
+}
+
+.toggleBar {
+  display: none;
+}
+
+@media (min-width: 800px) and (max-width: 1020px) {
+  .navbar {
+    padding: 12px 20px;
+  }
+  .navbar__left {
+    padding: 0;
+    width: 25%;
+  }
+  .navbar__left img {
+    transform: scale(0.7);
+    box-sizing: border-box;
+  }
+  .navbar__left h2 {
+    font-size: 23px;
+  }
+  .navbar__middle {
+    width: 40%;
+    gap: 20px;
+  }
+  .navbar__right {
+    width: 30%;
+  }
+  .navbar__right__button {
+    width: 30%;
+  }
+  .navbar__right__count {
+    width: 20px;
+    margin-left: -10px;
+    margin-top: -40px;
+  }
+}
+@media (max-width: 799px) {
+  .navbar {
+    position: relative;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .navbar__left img {
+    width: 50px;
+  }
+  .navbar__left h2 {
+    font-size: 24px;
+  }
+  .navbar__middle {
+    display: none;
+  }
+  .navbar .toggleBar {
+    display: block;
+  }
+  .navbar .toggleBar__icon {
+    color: red;
+  }
+  .navbar__false {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 200px;
+    background-color: azure;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    list-style: none;
+    top: 90px;
+    gap: 30px;
+    padding: 0;
+    left: 100px;
+  }
+  .navbar__right__button button {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbar__left {
+    width: 43%;
+  }
+  .navbar__left img {
+    transform: scale(0.7);
+  }
+  .navbar__left h2 {
+    margin: 0;
+    transform: scale(0.7);
+  }
+  .navbar__false {
+    left: auto;
+  }
+  .navbar__right {
+    width: 28%;
+    align-items: center;
+    gap: 5px;
+  }
+  .navbar__right__button {
+    margin-right: 0;
+  }
+  .navbar__right__button button {
+    height: 80%;
+    font-size: 0.8em;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

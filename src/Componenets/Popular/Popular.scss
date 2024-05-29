@@ -1,0 +1,58 @@
+.popular {
+  h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #909;
+    margin: 40px 0;
+    text-align: center;
+  }
+  &__item {
+    display: flex;
+    gap:20px;
+    padding: 0 140px;
+  }
+}
+@media (max-width: 1024px) {
+  .popular {
+    h1 {
+      font-size: 40px;
+    }
+    &__item {
+      padding: 0 100px;
+    }
+  }
+}
+@media (min-width: 801px) and (max-width: 980px) {
+  .popular {
+    h1 {
+      font-size: 30px;
+    }
+    &__item {
+      padding: 0 30px;
+    }
+  }
+}
+@media (min-width: 500px) and (max-width: 760px) {
+  .popular {
+    h1 {
+      font-size: 24px;
+    }
+    &__item {
+      padding: 0 10px;
+    }
+  }
+}
+@media (max-width: 499px) {
+  .popular {
+    h1 {
+      font-size: 2rem;
+    }
+    &__item {
+      display: grid;
+      //grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 0 20px;
+      
+    }
+  }
+}

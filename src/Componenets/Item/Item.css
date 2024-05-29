@@ -1,0 +1,48 @@
+.item {
+  width: 220px;
+  font-size: 14px;
+  margin: auto;
+}
+.item img {
+  width: 100%;
+}
+.item p {
+  text-align: center;
+  padding: 0px 6px;
+}
+.item__prices {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.item__prices__old {
+  font-weight: 600;
+  color: #909;
+  text-decoration: line-through;
+}
+.item :hover {
+  transform: scale(1.05);
+  transition: 0.6s;
+}
+
+@media (max-width: 1150px) {
+  .item {
+    width: 180px;
+  }
+  .item img {
+    height: 90%;
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .item {
+    width: 120px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .item {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+}/*# sourceMappingURL=Item.css.map */
